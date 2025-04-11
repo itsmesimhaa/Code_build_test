@@ -48,8 +48,8 @@ jobs:
           -Dsonar.projectKey=sample-python-app
           -Dsonar.sources=src
           -Dsonar.tests=tests
-          -Dsonar.host.url=${{ SONAR_HOST_URL }}
-          -Dsonar.login=${{ SONAR_LOGIN }}
+          -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }}
+          -Dsonar.login=${{ secrets.SONAR_LOGIN }}
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
