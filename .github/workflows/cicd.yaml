@@ -42,10 +42,6 @@ jobs:
         export PYTHONPATH=$PYTHONPATH:$(pwd)/src
         pytest tests/
 
-    - name: Run Unit Tests
-      run: |
-        pytest tests/
-
     - name: SonarQube Scan
       uses: sonarsource/sonarcloud-github-action@master
       with:
