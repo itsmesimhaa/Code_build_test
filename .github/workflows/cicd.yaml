@@ -12,7 +12,7 @@ jobs:
 
     env:
       IMAGE_NAME: sample-python-app
-      NEXUS_URL: 3.82.16.193:8083
+      NEXUS_URL: http://3.82.16.193:8081/repository/docker/
       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
       SONAR_LOGIN: ${{ secrets.SONAR_TOKEN }}
       NEXUS_USER: ${{ secrets.NEXUS_USER }}
