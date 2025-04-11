@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-test-analyze:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     env:
       IMAGE_NAME: sample-python-app
